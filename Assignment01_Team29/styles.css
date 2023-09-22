@@ -6,10 +6,24 @@
 }
 
 header{
-    background-color: #470a0a;
+    background-color: #2b2b2b;
 }
 
+.carousel {
+    margin-bottom: 4rem;
+}
 
-#carousel_size {
-    max-width: 50%;
+.carousel-caption{
+    bottom: 3rem;
+    z-index: 10;
+    /* width: 50%; */
+    background-color: #d8d8d8be;
+}
+
+.carousel-item{
+    height: 32rem;
+}
+
+.hobbies{
+    font-size: small;
 }

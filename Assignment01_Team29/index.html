@@ -18,7 +18,7 @@
         <nav id="top-nav" class="navbar justify-content-center navbar-expand-sm">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <ul class="nav nav-tabs navbar-dark col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
+                    <ul class="nav nav-pills navbar-dark col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
                         <li>
                             <a class="nav-link px-2 link-secondary" href="index.html">
                                 <svg class="bi d-block mx-auto" width="24" height="24">
@@ -48,34 +48,78 @@
             </div>
         </nav>
     </header>
-    <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div id="myCarouselAutoplaying" class="carousel carousel-dark slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class=""
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class=""
+                aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/harddrive-azamat-esenaliev-117729.jpg" class="d-block w-100"
-                    alt="harddrive-azamat-esenaliev-117729" id="carousel_size">
+            <div class="carousel-item  justify-content-center flex-fill active">
+                <div class="container">
+                    <img src="./images/harddrive-azamat-esenaliev-117729.jpg" class="d-block w-100 carousel_img"
+                        alt="harddrive-azamat-esenaliev-117729">
+                    <div class="carousel-caption justify-content-center">
+                        <h1>Hardrive</h1>
+                        <p>A hard drive, often abbreviated as HDD, is a data storage device found in computers and
+                            other<br>
+                            electronic devices. It uses spinning magnetic disks to store and retrieve digital<br>
+                            information. Hard drives offer high-capacity storage for files, applications, and
+                            operating<br>
+                            systems, making them a key component in most computers.</p>
+                            <p><a class="btn btn-lg btn-primary" href="items.html#hdd">Learn more</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./images/raspi-alessandro-oliverio-1472443.jpg" class="d-block w-100"
-                    alt="raspi-alessandro-oliverio-1472443" id="carousel_size">
+            <div class="carousel-item  justify-content-center flex-fill">
+                <div class="container">
+                    <img src="./images/raspi-alessandro-oliverio-1472443.jpg" class="d-block w-100 carousel_img"
+                        alt="raspi-alessandro-oliverio-1472443">
+                    <div class="carousel-caption justify-content-center">
+                        <h1>Raspberry Pi</h1>
+                        <p>A Raspberry Pi is a low-cost, compact computer ideal for DIY projects and learning. It's<br>
+                            versatile, running a Linux-based OS, and features various I/O options. It's popular for<br>
+                            coding, robotics, and home automation.</p>
+                            <p><a class="btn btn-lg btn-primary" href="items.html#rpi">Learn more</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./images/cpu-jeremy-waterhouse-3665444.jpg" class="d-block w-100"
-                    alt="cpu-jeremy-waterhouse-3665444" id="carousel_size">
+            <div class="carousel-item  justify-content-center flex-fill">
+                <div class="container">
+                    <img src="./images/cpu-jeremy-waterhouse-3665444.jpg" class="d-block w-100 carousel_img"
+                        alt="cpu-jeremy-waterhouse-3665444">
+                    <div class="carousel-caption justify-content-center">
+                        <h1>CPU</h1>
+                        <p>A CPU (Central Processing Unit) is the core component of a computer, responsible for<br>
+                            executing instructions and performing calculations. It processes data by fetching,
+                            decoding,<br>
+                            executing, and storing instructions, enabling software to run and perform tasks.</p>
+                            <p><a class="btn btn-lg btn-primary" href="items.html#cpu">Learn more</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselAutoplaying"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarouselAutoplaying"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- TODO - add initial carousel of 3 items-->
-    <footer></footer>
+
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2023–2024 Team29.</p>
+    </footer>
 </body>
 
 </html>
