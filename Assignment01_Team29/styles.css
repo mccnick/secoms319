@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #d3d3d3;
+}
+
 header{
-    background-color: #2b2b2b;
+    background-color: #444444;
 }
 
 .carousel {
@@ -16,7 +20,6 @@ header{
 .carousel-caption{
     bottom: 3rem;
     z-index: 10;
-    /* width: 50%; */
     background-color: #d8d8d8be;
 }
 
@@ -26,4 +29,12 @@ header{
 
 .hobbies{
     font-size: small;
+}
+
+.carousel-control-next{
+    color: #000000;
+}
+
+.carousel-control-prev{
+    color: black;
 }
