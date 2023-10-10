@@ -6,7 +6,6 @@ from mpu6050 import mpu6050
 sensor = mpu6050(0x68)
 DELAY = 30
 
-
 def gen_file():
     timestamp = time.strftime("%Y-%m-%d_%H-%M", time.localtime())
     f = f"mpu6050_data_{timestamp}.json"
