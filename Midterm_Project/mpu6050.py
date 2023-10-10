@@ -1,3 +1,4 @@
+import os
 import time
 import json
 from mpu6050 import mpu6050
@@ -11,11 +12,17 @@ def gen_file():
     f = f"mpu6050_data_{timestamp}.json"
     return f
 
+def data_folder():
+    folder_name = 'sensor_data'
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+    return folder_name
 
 def r_s():
     try:
+        folder_name = data_folder()
         while True:
-            f = gen_file()
+            f = os.path.join(folder_name, gen_file())
             accel = sensor.get_accel_data()
             gyro = sensor.get_gyro_data()
 
