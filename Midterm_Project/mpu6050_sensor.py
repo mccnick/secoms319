@@ -20,8 +20,8 @@ def data_folder():
 def r_s():
     try:
         folder_name = data_folder()
+        f = os.path.join(folder_name, gen_file())
         while True:
-            f = os.path.join(folder_name, gen_file())
             accel = sensor.get_accel_data()
             gyro = sensor.get_gyro_data()
 
@@ -30,9 +30,16 @@ def r_s():
                 "gyro": {"x": gyro["x"], "y": gyro["y"], "z": gyro["z"]},
             }
 
+            if os.path.exists(f):
+                with open(f, 'r') as json_file:
+                    existing_data = json.load(json_file)
+                sensor_data_list = existing_data.get("sensor_data", [])
+                sensor_data_list.append(sensor_data)
+                sensor_data = {"sensor_data": sensor_data_list}
+
             with open(f, "w") as json_file:
-                json.dump(sensor_data, json_file)
-                print("Saving to", f)
+                json.dump(sensor_data, json_file, indent=4)
+                print("Adding to", f)
 
             time.sleep(DELAY)
 
