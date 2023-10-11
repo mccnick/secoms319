@@ -9,6 +9,9 @@ sensor = mpu6050(0x68)  # Use the correct I2C address of sensor
 ##  Sensor reading Delay
 DELAY = 1
 
+# Get the current directory where the Python script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
 
 ### Generates file with filename and a timestamp
 def generate_filename():
@@ -19,7 +22,7 @@ def generate_filename():
 
 ### Generates a new folder to store files created
 def data_folder():
-    folder_name = "sensor_data"
+    folder_name = os.path.join(script_dir, 'sensor_data')
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     return folder_name
