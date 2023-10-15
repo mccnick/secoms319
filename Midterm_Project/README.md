@@ -1,4 +1,4 @@
-This is our README for the midterm project!
+### This is our README for the midterm project!
 
 COMS-319 - Fall 2023 - Midterm Project
 
