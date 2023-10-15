@@ -24,7 +24,7 @@ The website has a home "index" landing page, a project page, and an about page. 
 
 - The Home Page has a carousel with images and text, showcasing what technologies are used.
 - The Project Page has data and graph images showcasing the Raspberry pi accelerometer and gyroscope sensor data, and what the data means.
-- The About page is a "meet the team" page, containing information about the developers.
+- The About page is a "meet the team" page, containing information about the developers using images and text.
 
 -----------
 
