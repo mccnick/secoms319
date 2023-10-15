@@ -12,7 +12,7 @@ Technologies used:
 - CSS
 
 About the project:
-We tried our best to learn how to implement using a raspberry pi into a website. We chose to use accelerometer and gyroscope sensors to feed data to a website and analyze the data on the project page to showcase to the user.
+- We tried our best to learn how to implement using a raspberry pi into a website. We chose to use accelerometer and gyroscope sensors to feed data to a website and analyze the data on the project page to showcase to the user.
 
 Website pages (3):
 The website has a home "index" landing page, a project page, and an about page. All pages have working navbars.
