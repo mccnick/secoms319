@@ -15,7 +15,7 @@ Team29: <a href="https://github.com/mccnick">**Nick McCullough**</a> and <a href
 
 -----------
 ### About the project:
-- We tried our best to learn how to implement using a raspberry pi into a website. We chose to use accelerometer and gyroscope sensors to feed data to a website and analyze the data on the project page to showcase to the user.
+- We tried our best to learn how to implement using a raspberry pi into usable JSON data to show on a website. We chose to use accelerometer and gyroscope sensors to feed data to a website and analyze the data on the project page to showcase to the user.
 
 -----------
 
