@@ -22,4 +22,5 @@ The Project Page has data and graph images showcasing the Raspberry pi accelerom
 The About page is a "meet the team" page, containing information about the developers.
 
 Thanks for reading!
+
 -Nick and Tatenda
