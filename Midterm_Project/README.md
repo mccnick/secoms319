@@ -1,5 +1,6 @@
-### This is our README for the midterm project!
+This is our README for the midterm project!
 
-### Team29: [ Nick McCullough ](https://github.com/mccnick) and [ Tatenda Samudzi ](https://github.com/TateSamuD)
+COMS-319 - Fall 2023 - Midterm Project
 
+Team29: <a href="https://github.com/mccnick">**Nick McCullough**</a> and <a href="https://github.com/TateSamuD">**Tatenda Samudzi**</a>
 
