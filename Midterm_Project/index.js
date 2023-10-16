@@ -63,6 +63,15 @@ new Chart("accelerometerChart", {
         borderWidth: 2,
         fill: false,
       },
+
+      {
+        label: "Walking",
+        data: [10, 12, 11, 9, 11, 12, 9, 10, 12, 10, 12, 10], // Example data, modify as needed
+        borderColor: "yellow",
+        borderWidth: 2,
+        fill: false,
+    },
+    
       {
         label: "Cycling",
         // TODO: data needs to be one to one with xVal
@@ -80,9 +89,9 @@ new Chart("accelerometerChart", {
 });
 
 // Doughnut chart
-const labelVal = ["Running", "Walking", "Cycling", "Flying", "Not Moving"];
-const yValues = [55, 49, 44, 24, 15];
-const barColors = ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"];
+const labelVal = ["Running", "Walking", "Cycling", "Not Moving"];
+const yValues = [55, 49, 44, 15];
+const barColors = ["#b91d47", "#f0db4f", "#2b5797", "#1e7145"];
 
 new Chart("motionType", {
   type: "doughnut",
