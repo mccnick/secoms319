@@ -6,6 +6,7 @@ from mpu6050 import mpu6050
 # Initialise mpu6050 sensor
 sensor = mpu6050(0x68)  # Use the correct I2C address of sensor
 
+# TODO: Find appropriate delay for sensor
 ##  Sensor reading Delay
 DELAY = 1
 
@@ -22,10 +23,11 @@ def generate_filename():
 
 ### Generates a new folder to store files created
 def data_folder():
-    folder_name = os.path.join(script_dir, 'sensor_data')
+    folder_name = os.path.join(script_dir, "sensor_data")
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     return folder_name
+
 
 
 ### Function to read sensor data and append to JSON file
@@ -36,14 +38,12 @@ def read_and_save():
         while True:
             accel = sensor.get_accel_data()
             gyro = sensor.get_gyro_data()
-            # Optional reading of sensor temperature
-            # temperature = sensor.get_temp()
+            temperature = sensor.get_temp()
 
             #### Create a dictionary to store the data
             sensor_data = {
                 "accelerometer": {"x": accel["x"], "y": accel["y"], "z": accel["z"]},
-                "gyroscope": {"x": gyro["x"], "y": gyro["y"], "z": gyro["z"]},
-                #
+                # "gyroscope": {"x": gyro["x"], "y": gyro["y"], "z": gyro["z"]},
                 # "temperature": temperature,
             }
 

@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #d3d3d3;
 }
 
-header{
+header {
     background-color: #444444;
 }
 
@@ -19,28 +19,34 @@ header{
 
 .carousel-caption {
     position: absolute;
-    transform: translateY(10px);  /* This moves it slightly further down, you can adjust as needed */
-    background-color: rgba(255, 255, 255, 0.7); /* Optional: added for better text visibility */
-    padding: 10px 20px; /* Optional: added for some spacing */
+    transform: translateY(10px);
+    /* This moves it slightly further down, you can adjust as needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Optional: added for better text visibility */
+    padding: 10px 20px;
+    /* Optional: added for some spacing */
 }
 
 
 .carousel-item {
     height: 32rem;
-    width: 100%;  /* This will make the item take up the full width of its parent. */
-    align-items: center;  /* This will center the content vertically. */
-    justify-content: center;  /* This will center the content horizontally. */
+    width: 100%;
+    /* This will make the item take up the full width of its parent. */
+    align-items: center;
+    /* This will center the content vertically. */
+    justify-content: center;
+    /* This will center the content horizontally. */
 }
 
-.hobbies{
+.hobbies {
     font-size: small;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     color: #000000;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     color: black;
 }
 
@@ -48,6 +54,25 @@ header{
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;  /* This will center the image horizontally. */
+    margin: 0 auto;
+    /* This will center the image horizontally. */
 }
 
+#accelerometerChart {
+    width: 100%;
+    max-width: 600px;
+}
+
+#motionType {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* TODO: Testing 3D scatter graph
+#graph-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+ */
