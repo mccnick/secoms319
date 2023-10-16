@@ -48,7 +48,7 @@ new Chart("accelerometerChart", {
     labels: xVal,
     datasets: [
       {
-        label: "Test-Speed-1",
+        label: "Running",
         // TODO: data needs to be one to one with xVal
         data: [3, 20, 5, 60, 34, 54, 1, 33, 45, 23, 43, 21],
         borderColor: "red",
@@ -56,7 +56,7 @@ new Chart("accelerometerChart", {
         fill: false,
       },
       {
-        label: "Test-Speed-2",
+        label: "Not Moving",
         // TODO: data needs to be one to one with xVal
         data: [1, 33, 45, 23, 43, 21, 3, 20, 5, 60, 34, 54],
         borderColor: "green",
@@ -64,7 +64,7 @@ new Chart("accelerometerChart", {
         fill: false,
       },
       {
-        label: "Test-Speed-3",
+        label: "Cycling",
         // TODO: data needs to be one to one with xVal
         data: [21, 5, 60, 3, 20, 23, 43, 34, 54, 1, 33, 45],
         borderColor: "blue",
