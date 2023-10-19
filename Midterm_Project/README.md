@@ -6,6 +6,10 @@ Team29: <a href="https://github.com/mccnick">**Nick McCullough**</a> and <a href
 
 -----------
 
+Our Website is live here: https://mccnick.github.io/secoms319/Midterm_Project/
+
+-----------
+
 ### Technologies used: 
 - Raspberry Pi
 - JavaScript
