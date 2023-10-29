@@ -7,7 +7,7 @@ import { Category } from "./Categories";
 
 function Counter() {
   const [count, setCounter] = useState(0);
-  const [message, setMeassage] = useState("");
+  // const [message, setMeassage] = useState("");
   return (
     <div>
       <h1>Counter: {count}</h1>
@@ -30,7 +30,7 @@ function Counter() {
       <hr></hr>
       <input
         onChange={(e) => {
-          setMeassage(e.target.value);
+          // setMeassage(e.target.value);
           console.log(e.target.value);
         }}
       />
