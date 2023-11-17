@@ -26,7 +26,7 @@ function App() {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     setCart(updatedCart);
   };
-  
+
   useEffect(() => {
     // Update the cart in local storage whenever it changes
     localStorage.setItem("cart", JSON.stringify(cart));
